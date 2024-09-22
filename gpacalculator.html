@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>GPA Calculator</title>
+        <style>
+            body {
+                background-color: blue;
+            }
+            h1 {
+                font-family: Tahoma;
+                color: white;
+            }
+            #crdttxt {
+                background-color: yellow;
+            }
+            #div1 {
+                background-color: lightgreen;
+                border-color: black;
+                border-style: solid;
+                border-radius: 4px;
+                padding: 20px;
+                text-align: center;
+            }
+        </style>
+        <script src="calculategpa.js"></script>
+    </head>
+    <body>
+        <center><h1>Welcome to GPA Calculator!</h1></center>
+        <div id="div1">
+        <form>
+        <br><input type="text" placeholder="Course Name">
+        <input type="text" size="5px" placeholder="CrdtHrs" id="crdttxt" value="">
+        <select>Grade
+        <option value="A" class="grade">A</option>
+        <option value="A-" class="grade">A-</option>
+        <option value="B+" class="grade">B+</option>
+        <option value="B" class="grade">B</option>
+        <option value="C+" class="grade">C+</option>
+        <option value="C" class="grade">C</option>
+        <option value="D" class="grade">D</option>
+        <option value="F" class="grade">F</option>
+    </select>
+         <br><input type="button" value="Add" onclick="addcourse()">
+         <input type="reset" value="Reset">
+         <input type="button" value="Calculate!" onclick="disp()">
+        </form>
+        </div>
+    </body>
+</html>
